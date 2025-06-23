@@ -1,8 +1,8 @@
-
 import { ArrowRight, Leaf, Shield, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
+import { WatchDemoModal } from "@/components/WatchDemoModal";
 
 export const Hero = () => {
   const { t } = useLanguage();
@@ -32,9 +32,7 @@ export const Hero = () => {
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
-              <Button variant="outline" size="lg" className="border-green-600 text-green-600 hover:bg-green-50 dark:border-green-400 dark:text-green-400 dark:hover:bg-green-900/20 text-lg px-8 py-3">
-                {t('hero.watchDemo')}
-              </Button>
+              <WatchDemoModal />
             </div>
 
             <div className="grid grid-cols-3 gap-8 pt-8">
