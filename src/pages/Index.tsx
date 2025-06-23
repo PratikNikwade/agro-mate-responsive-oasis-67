@@ -11,6 +11,8 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { OfflineNotice } from "@/components/OfflineNotice";
 import { AIChatbot } from "@/components/AIChatbot";
+import { CropMonitoring } from "@/components/CropMonitoring";
+import { CropDatabase } from "@/components/CropDatabase";
 
 const Index = () => {
   return (
@@ -19,6 +21,16 @@ const Index = () => {
       <OfflineNotice />
       <Hero />
       <Services />
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <CropMonitoring />
+        </div>
+      </section>
+      <section className="py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <CropDatabase />
+        </div>
+      </section>
       <LiveAnalytics />
       <About />
       <CropHelpline />
