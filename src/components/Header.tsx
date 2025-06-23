@@ -25,6 +25,9 @@ export const Header = () => {
             <a href="#about" className="text-gray-700 hover:text-green-600 transition-colors">
               About
             </a>
+            <a href="#pricing" className="text-gray-700 hover:text-green-600 transition-colors">
+              Pricing
+            </a>
             <a href="#contact" className="text-gray-700 hover:text-green-600 transition-colors">
               Contact
             </a>
@@ -72,6 +75,13 @@ export const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
+              </a>
+              <a
+                href="#pricing"
+                className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Pricing
               </a>
               <a
                 href="#contact"
