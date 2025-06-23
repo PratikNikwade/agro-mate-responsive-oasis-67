@@ -6,11 +6,13 @@ import { About } from "@/components/About";
 import { Pricing } from "@/components/Pricing";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
+import { OfflineNotice } from "@/components/OfflineNotice";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
       <Header />
+      <OfflineNotice />
       <Hero />
       <Services />
       <About />
