@@ -26,44 +26,44 @@ export const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/scan-crop">
-                <Button size="lg" className="bg-green-600 hover:bg-green-700 dark:bg-green-500 dark:hover:bg-green-600 text-lg px-8 py-3 w-full sm:w-auto">
+                <Button size="lg" className="bg-green-600 hover:bg-green-700 dark:bg-green-500 dark:hover:bg-green-600 text-lg px-8 py-4 w-full sm:w-auto touch-manipulation">
                   {t('hero.startTrial')}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
             </div>
 
-            <div className="grid grid-cols-3 gap-8 pt-8">
+            <div className="grid grid-cols-3 gap-4 sm:gap-8 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-600 dark:text-green-400">500+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">{t('hero.activeFarms')}</div>
+                <div className="text-2xl sm:text-3xl font-bold text-green-600 dark:text-green-400">500+</div>
+                <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">{t('hero.activeFarms')}</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-600 dark:text-green-400">25%</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">{t('hero.yieldIncrease')}</div>
+                <div className="text-2xl sm:text-3xl font-bold text-green-600 dark:text-green-400">25%</div>
+                <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">{t('hero.yieldIncrease')}</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-600 dark:text-green-400">30%</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">{t('hero.costReduction')}</div>
+                <div className="text-2xl sm:text-3xl font-bold text-green-600 dark:text-green-400">30%</div>
+                <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">{t('hero.costReduction')}</div>
               </div>
             </div>
           </div>
 
           <div className="relative">
-            <div className="relative z-10 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-8 lg:p-12">
+            <div className="relative z-10 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-6 sm:p-8 lg:p-12">
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Farm Dashboard</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white">Farm Dashboard</h3>
                   <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                 </div>
                 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="bg-green-50 dark:bg-green-900/30 p-4 rounded-lg">
                     <div className="flex items-center justify-between mb-2">
                       <Shield className="w-5 h-5 text-green-600 dark:text-green-400" />
                       <span className="text-xs text-green-600 dark:text-green-400 font-medium">HEALTHY</span>
                     </div>
-                    <div className="text-2xl font-bold text-gray-900 dark:text-white">98%</div>
+                    <div className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">98%</div>
                     <div className="text-sm text-gray-600 dark:text-gray-400">Crop Health</div>
                   </div>
                   
@@ -72,7 +72,7 @@ export const Hero = () => {
                       <TrendingUp className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                       <span className="text-xs text-blue-600 dark:text-blue-400 font-medium">OPTIMAL</span>
                     </div>
-                    <div className="text-2xl font-bold text-gray-900 dark:text-white">7.2</div>
+                    <div className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">7.2</div>
                     <div className="text-sm text-gray-600 dark:text-gray-400">Soil pH</div>
                   </div>
                 </div>
