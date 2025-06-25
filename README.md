@@ -1,9 +1,7 @@
----
 
 🔥 Project Title: “AgroMate: AI-Powered Rural Crop Advisor & Market Linkage Platform”
 
 
----
 
 ✅ Problem Statement:
 
