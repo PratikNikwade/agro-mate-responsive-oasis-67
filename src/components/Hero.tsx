@@ -2,7 +2,6 @@ import { ArrowRight, Leaf, Shield, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
-import { WatchDemoModal } from "@/components/WatchDemoModal";
 
 export const Hero = () => {
   const { t } = useLanguage();
@@ -32,7 +31,6 @@ export const Hero = () => {
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
-              <WatchDemoModal />
             </div>
 
             <div className="grid grid-cols-3 gap-8 pt-8">
